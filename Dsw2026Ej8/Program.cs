@@ -3,6 +3,7 @@ using Dsw2026Ej8.Problema02;
 using Dsw2026Ej8.Problema03;
 using Dsw2026Ej8.Problema04;
 using Dsw2026Ej8.Problema05;
+using Dsw2026Ej8.Problema06;
 
 namespace Dsw2026Ej8
 {
@@ -87,7 +88,7 @@ namespace Dsw2026Ej8
                         }
                     case "5":
                         {
-                            Console.WriteLine("\nEjecutando Problema 5");
+                            Console.WriteLine("\nEjecutando Problema 5:");
                             var ej5 = new Problema5();
 
                             // venta minorista por 1000
@@ -104,6 +105,17 @@ namespace Dsw2026Ej8
                         }
                     case "6":
                         {
+                            Console.WriteLine("\nEjecutando Problema 6:");
+                            var ej6 = new Problema6();
+
+                            string codigoSucio = "  ab 123 x  ";
+                            string resultado = ej6.NormalizarCodigoProducto(codigoSucio);
+
+                            Console.WriteLine($"Entrada: '{codigoSucio}'");
+                            Console.WriteLine($"Salida:  '{resultado}'"); // salida: 'AB-123-X'
+
+                            // prueba del null
+                            Console.WriteLine($"Prueba null: {ej6.NormalizarCodigoProducto(null)}");
                             break;
                         }
                     default:
