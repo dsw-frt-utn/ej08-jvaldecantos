@@ -1,7 +1,7 @@
 ﻿using Dsw2026Ej8.Problema01;
 using Dsw2026Ej8.Problema02;
 using Dsw2026Ej8.Problema03;
-
+using Dsw2026Ej8.Problema04;
 
 namespace Dsw2026Ej8
 {
@@ -71,6 +71,17 @@ namespace Dsw2026Ej8
                         }
                     case "4":
                         {
+                            Console.WriteLine("\nEjecutando Problema 4:");
+                            var ej4 = new Problema4();
+
+                            // una null, un 7, y una invalida
+                            // promedio: 7 / 1 = 7
+                            double res1 = ej4.CalcularPromedio(7, null, 15);
+                            Console.WriteLine($"Notas [7, null, 15] -> Resultado: {res1}");
+
+                            // todo null
+                            double res2 = ej4.CalcularPromedio(null, null, null);
+                            Console.WriteLine($"Notas [null, null, null] -> Resultado: {res2}");
                             break;
                         }
                     case "5":
