@@ -4,14 +4,17 @@
     {
         static void Main(string[] args)
         {
-            // Instanciamos nuestra clase helper
-            ProductHelper helper = new ProductHelper();
+            ////Problema1 Pruebas
+            ////instanciamos 
+            //ProductHelper p = new ProductHelper();
 
-            // Llamamos al método con datos de prueba
-            string etiqueta = helper.ObtenerEtiquetaProducto(1029384756, "Teclado Mecánico Inalámbrico", 45500.50m);
+            ////llamamos el metodo para probar
+            //string etiqueta = p.ObtenerEtiquetaProducto(11223, "Jersey", 49500.50m);
+            //Console.WriteLine(etiqueta);
 
-            // Imprimimos el resultado en consola
-            Console.WriteLine(etiqueta);
+            Problema2 ej2 = new Problema2();
+            string resultado = ej2.CrearResumenVenta(1406, "Chocolate", 2, 1499.75m);
+            Console.WriteLine(resultado);
         }
     }
 }
