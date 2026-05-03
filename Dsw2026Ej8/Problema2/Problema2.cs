@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Numerics;
 using System.Text;
 
-namespace Dsw2026Ej8
+namespace Dsw2026Ej8.Problema02
 {
     internal class Problema2
     {
