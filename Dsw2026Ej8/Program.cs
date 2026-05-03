@@ -2,6 +2,7 @@
 using Dsw2026Ej8.Problema02;
 using Dsw2026Ej8.Problema03;
 using Dsw2026Ej8.Problema04;
+using Dsw2026Ej8.Problema05;
 
 namespace Dsw2026Ej8
 {
@@ -86,6 +87,19 @@ namespace Dsw2026Ej8
                         }
                     case "5":
                         {
+                            Console.WriteLine("\nEjecutando Problema 5");
+                            var ej5 = new Problema5();
+
+                            // venta minorista por 1000
+                            Sale ventaMin = new RetailSale { Monto = 1000 };
+                            // venta mayorista por 1000
+                            Sale ventaMay = new WholesaleSale { Monto = 1000 };
+
+                            decimal totalMin = ej5.ObtenerImporteFinal(ventaMin);
+                            decimal totalMay = ej5.ObtenerImporteFinal(ventaMay);
+
+                            Console.WriteLine($"Venta Retail (Monto): ${totalMin:N2}");
+                            Console.WriteLine($"Venta Wholesale (Monto - 10%): ${totalMay:N2}");
                             break;
                         }
                     case "6":
